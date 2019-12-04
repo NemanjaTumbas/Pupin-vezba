@@ -5,22 +5,66 @@
     <title>Document</title>
     <style>
         body {
-            width: 70%;
-            text-align: left;
+            background-color: #aaacad81;
         }
+
+        #left-side-div {
+            float: left;
+            width: calc(30% - 20px);
+            margin-top: 50px;
+        }
+
+        #right-side-div {
+            float: left;
+            width: 70%;
+            margin-left: 15px;
+        }
+
+        .link {
+            border: 2px solid #149fd7;
+            background-color: #87cefa;
+            color: #000000;
+        }
+
+        #hr {
+            float: left;
+            border: none;
+            border-left: 1px solid #000000;
+            height: 750px;
+            width: 1px; 
+        }
+
+        p {
+            font-size: 20px;
+            font-family: sans-serif
+        }
+
+        h1 {
+            font-family: monospace;
+            font-size: 40px;
+        }
+
     </style>
 </head>
 <body>
-    <ul>
-        <li><a href="pupin.html" target="_blank">main page</a></li>
-        <li><a href="literary-work.html" target="_blank">literary work</a></li>
-        <li><a href="early-life-education.html" target="_blank">early life education</a></li>
-        <li><a href="pupin-coils.html" target="_blank">pupin coils</a></li>
-    </ul>
-    <hr>
+    <div id="left-side-div">
+        <div><a class="link" href="pupin.html" target="_blank">Click here to visit main page</a></div><br>
+        <div><a class="link" href="literary-work.html" target="_blank">Click here to visit literary work</a></div><br>
+        <div><a class="link" href="early-life-education.html" target="_blank">Click here to visit early life education</a></div><br>
+        <div><a class="link" href="pupin-coils.html" target="_blank">Click here to visit pupin coils</a></div> 
+    </div>
+
+    <hr id="hr">
+
+    <div id="right-side-div">
 
     <h1>Pupin coils</h1>
+
+    <hr>
+
     <img src="pupin-1916.jpg" alt="Pupin">
+
+    <hr>
 
     <p>Pupin's 1899 patent for loading coils, archaically called "Pupin coils", followed closely on the pioneering work of the English physicist
         and mathematician Oliver Heaviside, which predates Pupin's patent by some seven years. The importance of the patent was made clear
@@ -28,5 +72,6 @@
         Although AT&T bought Pupin's patent, they made little use of it, as they already had their own development in hand led by George Campbell
         and had up to this point been challenging Pupin with Campbell's own patent. AT&T were afraid they would lose control of an invention which
         was immensely valuable due to its ability to greatly extend the range of long distance telephones and especially submarine ones.</p>
+    </div>
 </body>
 </html>

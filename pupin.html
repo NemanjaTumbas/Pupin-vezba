@@ -7,34 +7,80 @@
 
     <style>
         body {
+            background-color: #aaacad81;
+        }
+
+        #left-side-div {
+            float: left;
+            width: calc(30% - 20px);
+            margin-top: 50px;
+        }
+
+        #right-side-div {
+            float: left;
             width: 70%;
-            text-align: left;
+            margin-left: 15px;
+        }
+
+        .link {
+            border: 2px solid #149fd7;
+            background-color: #87cefa;
+            color: #000000;
+        }
+
+        #hr {
+            float: left;
+            border: none;
+            border-left: 1px solid #000000;
+            height: 650px;
+            width: 1px; 
+        }
+
+        p {
+            font-size: 20px;
+            font-family: sans-serif
+        }
+
+        h1 {
+            font-family: monospace;
+            font-size: 40px;
+        }
+
+        img {
+            width: 300px;
         }
     </style>
 </head>
 
 <body>
-    <ul>
-        <li><a href="pupin.html" target="_blank">main page</a></li>
-        <li><a href="literary-work.html" target="_blank">literary work</a></li>
-        <li><a href="early-life-education.html" target="_blank">early life education</a></li>
-        <li><a href="pupin-coils.html" target="_blank">pupin coils</a></li>
-    </ul>
-    <hr>
+    <div id="left-side-div">
+            <div><a class="link" href="pupin.html" target="_blank">Click here to visit main page</a></div><br>
+            <div><a class="link" href="literary-work.html" target="_blank">Click here to visit literary work</a></div><br>
+            <div><a class="link" href="early-life-education.html" target="_blank">Click here to visit early life education</a></div><br>
+            <div><a class="link" href="pupin-coils.html" target="_blank">Click here to visit pupin coils</a></div> 
+    </div>
 
-    <h1>Mihajlo Idvorski Pupin</h1>
+    <hr id="hr">
 
-    <img src="pupin.jpg" alt="Mihajlo Idvorski Pupin">
+    <div id="right-side-div">
+        <h1>Mihajlo Idvorski Pupin</h1>
 
-    <p><b>Mihajlo Idvorski Pupin, Ph.D., LL.D. (Serbian Cyrillic: Михајло Идворски Пупин; 9 October 1858 – 12 March
-            1935)</b> ,
-        also known as Michael I. Pupin, was a Serbian American physicist and physical chemist.
-        Pupin is best known for his numerous patents, including a means of greatly extending the range of long-distance
-        telephone communication
-        by placing loading coils (of wire) at predetermined intervals along the transmitting wire (known as
-        "pupinization").
-        Pupin was a founding member of National Advisory Committee for Aeronautics (NACA) on March 3, 1915, which later
-        became NASA.</p>
+        <hr>
+
+        <img src="pupin.jpg" alt="Mihajlo Idvorski Pupin">
+
+        <hr>
+
+        <p><b>Mihajlo Idvorski Pupin, Ph.D., LL.D. (Serbian Cyrillic: Михајло Идворски Пупин; 9 October 1858 – 12 March
+             1935)</b> ,
+            also known as Michael I. Pupin, was a Serbian American physicist and physical chemist.
+            Pupin is best known for his numerous patents, including a means of greatly extending the range of long-distance
+            telephone communication
+            by placing loading coils (of wire) at predetermined intervals along the transmitting wire (known as
+            "pupinization").
+            Pupin was a founding member of National Advisory Committee for Aeronautics (NACA) on March 3, 1915, which later
+            became NASA.</p>
+    </div>
 </body>
 
 </html>
